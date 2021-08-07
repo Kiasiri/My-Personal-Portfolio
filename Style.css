@@ -12,6 +12,16 @@ header h1 {
 color: burlywood;
 text-align: center;
 }
+header #snapshot {
+    left: 42%;
+    position: relative;
+    justify-content: center;
+    width: 200px;
+    box-shadow: 10px 10px 10px black;
+    align-items: center;
+    display: block;
+
+}
 header nav {
     text-align: center;
     position: relative;
