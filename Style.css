@@ -16,7 +16,10 @@ display: inline-block ;
 flex-wrap: wrap;
 color: burlywood;
 }
-
+header nav {
+    text-align: center;
+    position: relative;
+}
 header nav ul li {
     font-size: 25px;
     background-color: ivory;
@@ -24,32 +27,33 @@ header nav ul li {
     margin: 10px;
     display: inline-block;
     text-decoration-line: none;
+    text-align: center;
 }
 header nav ul li a {
     text-decoration: none;
     color: rgb(52, 56, 47);
 }
+summary {
+    text-align: center;
+    position: relative;
+}
 #name {
     font-weight: bold;
 }
-main{
-
-}
-main section {
-
-}
-main section figure {
+#projects {
 display: flex;
-flex: 33.33%;
+flex-wrap: wrap;
+align-items: center;
+}
+#projects figure {
 margin: 15px;
 text-align: center;
 }
-main section figure a {
 
-}
 main section figure img {
-    width: 33.33%;
+    width: 100px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     box-shadow: 10px 10px 10px black;
     justify-content: center;
@@ -58,7 +62,12 @@ main section figure img {
     text-align: center;
     justify-content: center;
 }
+main section figure img 
 
+footer {
+    text-align: center;
+    position: relative;
+}
 footer h1 {
     display: inline-block ;
     flex-wrap: wrap;
