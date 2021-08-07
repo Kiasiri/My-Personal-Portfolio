@@ -9,28 +9,29 @@ p {
 
 }
 header h1 {
-display: inline-block ;
-flex-wrap: wrap;
 color: burlywood;
+text-align: center;
 }
 header nav {
     text-align: center;
     position: relative;
 }
 ul {
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: black;
+}
+summary h1 {color: burlywood;
 }
 header nav ul li {
     font-size: 20px;
-    background-color: ivory;
+    background-color:burlywood;
     box-shadow: 10px 10px 10px black;
-    margin: 10px blue;
     display: inline-block;
     text-decoration-line: none;
     text-align: center;
@@ -84,6 +85,9 @@ img:hover {
         display:block;
         z-index:999;
     transform: scale(1.4);
+}
+img:active {
+transform: scale(1.8);
 }
 
 footer {
