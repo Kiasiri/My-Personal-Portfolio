@@ -171,3 +171,45 @@ footer p {
   text-decoration: none;
   color: black;
 }
+@media screen and (max-width: 780px) {
+  header {
+    justify-content: center;
+  }
+
+  header nav {
+    margin: 10px 0;
+    width: 60%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  #about-me,
+  #projects,
+  #contact {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .title {
+    width: auto;
+    border-right: none;
+    border-bottom: 3px solid var(--primary-color);
+    margin-bottom: 5px;
+  }
+
+  .title h1 {
+    text-align: center;
+    padding: 0 0 5px 0;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  #contact .content {
+    width: 100%;
+  }
+}
