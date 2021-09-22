@@ -1,7 +1,7 @@
 :root {
-  --primary-color: rgb(73, 72, 72);
+  --primary-color: #093145;
   --secondar-color: burlywood;
-  --tertiary-color: black;
+  --tertiary-color: #9a2617;
 }
 * {
   box-sizing: border-box;
@@ -11,18 +11,19 @@
   list-style: none;
 }
 body {
-  background-color: rgb(73, 72, 72);
+  background-color: var(--primary-color);
+  font-family: "Times New Roman", Times, serif;
 }
 p {
   font-size: 20px;
+  color: var(--secondar-color);
 }
 header {
   display: flex;
   flex-wrap: wrap;
 }
 header nav {
-  text-align: center;
-  position: relative;
+  margin-left: auto;
 }
 header nav ul {
   font-size: 20px;
@@ -72,7 +73,7 @@ summary {
   border-right: 3px solid var(--primary-color);
 }
 
-.title h2 {
+.title h1 {
   font-size: 40px;
   text-align: right;
   padding: 10px 5px 10px 0;
@@ -86,7 +87,7 @@ summary {
   position: relative;
   bottom: 20px;
   padding: 10px 10px 10px 30px;
-  background: var(--secondary-color);
+  background: #373d3f;
   color: var(--tertiary-color);
   font-size: 20px;
 }
@@ -100,9 +101,11 @@ summary {
 }
 
 #coding-quiz {
+  background: url(quiz.jpg);
 }
 
 #forecast {
+  background: url(forecast.jpg);
 }
 
 #streamThis {
@@ -111,7 +114,7 @@ summary {
   padding-top: 300px;
   margin-bottom: 20px;
   border: 3px solid var(--secondary-color);
-  /*background: url(stock1.jpg);*/
+  background: url(stream.jpg);
   background-size: cover;
 }
 
@@ -127,20 +130,30 @@ summary {
   background-size: cover;
   background-position: center;
 }
-
-/* img:hover {
-  position: relative;
-  top: -25px;
-  left: -35px;
-  width: 500px;
-  height: auto;
-  display: block;
-  z-index: 999;
-  transform: scale(1.4);
+#coding-quiz:hover,
+#forecast:hover,
+#streamThis:hover {
+  opacity: 85%;
+  transform: scale(1.1);
 }
-img:active {
-  transform: scale(1.8);
-} */
+
+#contact {
+  padding-bottom: 10px;
+}
+#contact .content ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#contact .content ul li {
+  color: var(--primary-color);
+  font-size: 20px;
+  border-bottom: 3px solid var(--primary-color);
+  margin: 0 20px 10px 20px;
+}
+#contact .content ul li a {
+  color: var(--secondar-color);
+}
 
 footer {
   text-align: center;
