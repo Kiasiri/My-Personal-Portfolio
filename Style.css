@@ -1,125 +1,129 @@
+:root {
+  --primary-color: rgb(73, 72, 72);
+  --secondar-color: burlywood;
+  --tertiary-color: black;
+}
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 body {
-    background-color: rgb(73, 72, 72);
+  background-color: rgb(73, 72, 72);
 }
 p {
-    font-size: 20px;
-
+  font-size: 20px;
 }
-header h1 {
-color: burlywood;
-text-align: center;
-}
-header #snapshot {
-    left: 42%;
-    position: relative;
-    justify-content: center;
-    width: 200px;
-    box-shadow: 10px 10px 10px black;
-    align-items: center;
-    display: block;
-
+header {
+  display: flex;
+  flex-wrap: wrap;
 }
 header nav {
-    text-align: center;
-    position: relative;
+  text-align: center;
+  position: relative;
 }
-ul {
-    margin-left: 20px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: black;
-}
-summary h1 {color: burlywood;
-}
-header nav ul li {
-    font-size: 20px;
-    background-color:burlywood;
-    box-shadow: 10px 10px 10px black;
-    display: inline-block;
-    text-decoration-line: none;
-    text-align: center;
+header nav ul {
+  font-size: 20px;
+  background-color: burlywood;
+  box-shadow: 10px 10px 10px black;
+  text-decoration-line: none;
+  text-align: center;
 }
 header nav ul li a {
-    text-decoration: none;
-    color: rgb(52, 56, 47);
+  text-decoration: none;
+  color: rgb(52, 56, 47);
 }
+header h1 {
+  color: burlywood;
+  padding: 10px;
+}
+header h1 a {
+  color: var(--secondary-color);
+}
+header img {
+  left: 42%;
+  width: 200px;
+  box-shadow: 10px 10px 10px black;
+  align-self: center;
+}
+.card-text {
+  position: relative;
+  bottom: 20px;
+  padding: 10px 10px 10px 30px;
+  background: var(--secondary-color);
+  color: var(--tertiary-color);
+  font-size: 20px;
+}
+.card-text p {
+  font-size: 15px;
+}
+summary h1 {
+  color: burlywood;
+}
+
 summary {
-    text-align: center;
-    position: relative;
+  text-align: center;
+  position: relative;
 }
 
 #name {
-    font-weight: bold;
-    text-decoration: underline;
+  font-weight: bold;
+  text-decoration: underline;
 }
 #projects {
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-text-align: center;
-justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 #projects h2 {
-    position: fixed;
-    text-align: center;
+  position: fixed;
+  text-align: center;
 }
 
 #projects figure {
-margin: 15px;
-text-align: center;
+  margin: 15px;
+  text-align: center;
 }
-
 
 #projects figure img {
-    width: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    box-shadow: 10px 10px 10px black;
-    align-items: center;
-
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  box-shadow: 10px 10px 10px black;
+  align-items: center;
 }
 img:hover {
-        position:relative;
-        top:-25px;
-        left:-35px;
-        width:500px;
-        height:auto;
-        display:block;
-        z-index:999;
-    transform: scale(1.4);
+  position: relative;
+  top: -25px;
+  left: -35px;
+  width: 500px;
+  height: auto;
+  display: block;
+  z-index: 999;
+  transform: scale(1.4);
 }
 img:active {
-transform: scale(1.8);
+  transform: scale(1.8);
 }
 
 footer {
-    text-align: center;
-    position: relative;
+  text-align: center;
+  position: relative;
 }
 footer h1 {
-    display: inline-block ;
-    flex-wrap: wrap;
-    color: burlywood;
-    }
+  display: inline-block;
+  flex-wrap: wrap;
+  color: burlywood;
+}
 footer p {
-    font-weight: bold;
-
+  font-weight: bold;
 }
-#linkedin{
-    text-decoration: none;
-    color: black;
-}
-@media screen and (max-width: 680px) {
-    #projects {
-        flex-direction: column;
-        align-items: center;
-    }
+#linkedin {
+  text-decoration: none;
+  color: black;
 }
