@@ -48,17 +48,12 @@ header img {
   box-shadow: 10px 10px 10px black;
   align-self: center;
 }
-.card-text {
-  position: relative;
-  bottom: 20px;
-  padding: 10px 10px 10px 30px;
-  background: var(--secondary-color);
-  color: var(--tertiary-color);
-  font-size: 20px;
+section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 0 30px 0;
 }
-.card-text p {
-  font-size: 15px;
-}
+
 summary h1 {
   color: burlywood;
 }
@@ -72,32 +67,68 @@ summary {
   font-weight: bold;
   text-decoration: underline;
 }
-#projects {
+.title {
+  width: 20%;
+  border-right: 3px solid var(--primary-color);
+}
+
+.title h2 {
+  font-size: 40px;
+  text-align: right;
+  padding: 10px 5px 10px 0;
+}
+.content {
+  width: 75%;
+  padding-left: 20px;
+  align-self: center;
+}
+.card-text {
+  position: relative;
+  bottom: 20px;
+  padding: 10px 10px 10px 30px;
+  background: var(--secondary-color);
+  color: var(--tertiary-color);
+  font-size: 20px;
+}
+.card-text p {
+  font-size: 15px;
+}
+#projects .content {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  text-align: center;
   justify-content: center;
 }
-#projects h2 {
-  position: fixed;
-  text-align: center;
+
+#coding-quiz {
 }
 
-#projects figure {
-  margin: 15px;
-  text-align: center;
+#forecast {
 }
 
-#projects figure img {
-  width: 200px;
+#streamThis {
+  display: flex;
+  width: 100%;
+  padding-top: 300px;
+  margin-bottom: 20px;
+  border: 3px solid var(--secondary-color);
+  /*background: url(stock1.jpg);*/
+  background-size: cover;
+}
+
+#coding-quiz,
+#forecast,
+#streamThis {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  box-shadow: 10px 10px 10px black;
-  align-items: center;
+  justify-content: space-between;
+  flex: 1 49%;
+  padding-top: 150px;
+  border: 3px solid var(--secondary-color);
+  background-size: cover;
+  background-position: center;
 }
-img:hover {
+
+/* img:hover {
   position: relative;
   top: -25px;
   left: -35px;
@@ -109,7 +140,7 @@ img:hover {
 }
 img:active {
   transform: scale(1.8);
-}
+} */
 
 footer {
   text-align: center;
