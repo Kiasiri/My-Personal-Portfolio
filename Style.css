@@ -101,11 +101,11 @@ summary {
 }
 
 #coding-quiz {
-  background: url(quiz.JPG);
+  background: url(quiz.jpg);
 }
 
 #forecast {
-  background: url(forecast.JPG);
+  background: url(forecast.jpg);
 }
 
 #streamThis {
@@ -114,7 +114,7 @@ summary {
   padding-top: 300px;
   margin-bottom: 20px;
   border: 3px solid var(--secondary-color);
-  background: url(stream.JPG);
+  background: url(stream.jpg);
   background-size: cover;
 }
 
